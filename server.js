@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
-let userGoal = 'We love Docker!';
+let userGoal = 'We love learning about Docker!';
 
 app.use(
   bodyParser.urlencoded({
@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
       </head>
       <body>
         <section>
-          <h2>What is your GOAL?</h2>
+          <h2>What is your Goal for Today?</h2>
           <h3>${userGoal}</h3>
         </section>
         <form action="/store-goal" method="POST">
